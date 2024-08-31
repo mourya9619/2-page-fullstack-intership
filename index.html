@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Creation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Creation</h1>
+
+        <!-- Assessment Title Field -->
+        <div class="form-group">
+            <label for="title">Assessment Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter the assessment title">
+        </div>
+
+        <!-- Assessment Type Selection -->
+        <div class="form-group">
+            <label for="type">Assessment Type:</label>
+            <select id="type" name="type">
+                <option value="quiz">Quiz</option>
+                <option value="assignment">Assignment</option>
+                <option value="survey">Survey</option>
+            </select>
+        </div>
+
+        <!-- Question Bank Access -->
+        <div class="form-group">
+            <label for="question-bank">Question Bank:</label>
+            <select id="question-bank" name="question-bank">
+                <option value="new">Create New Questions</option>
+                <option value="existing">Select from Question Bank</option>
+            </select>
+        </div>
+
+        <!-- Question Creation Tool -->
+        <div class="form-group">
+            <label for="question-creation">Question Creation:</label>
+            <textarea id="question-creation" name="question-creation" placeholder="Create your questions here..."></textarea>
+        </div>
+
+        <!-- Grading Options -->
+        <div class="form-group">
+            <label for="grading">Grading Options:</label>
+            <select id="grading" name="grading">
+                <option value="auto">Automated Grading</option>
+                <option value="manual">Manual Grading</option>
+            </select>
+        </div>
+
+        <!-- Assessment Instructions -->
+        <div class="form-group">
+            <label for="instructions">Assessment Instructions:</label>
+            <textarea id="instructions" name="instructions" placeholder="Enter instructions for the assessment..."></textarea>
+        </div>
+
+        <!-- Time Limit and Attempts -->
+        <div class="form-group">
+            <label for="time-limit">Time Limit (minutes):</label>
+            <input type="number" id="time-limit" name="time-limit" placeholder="Enter time limit in minutes">
+        </div>
+
+        <div class="form-group">
+            <label for="attempts">Attempts Allowed:</label>
+            <input type="number" id="attempts" name="attempts" placeholder="Enter the number of attempts allowed">
+        </div>
+
+        <!-- Feedback Options -->
+        <div class="form-group">
+            <label for="feedback">Feedback Options:</label>
+            <select id="feedback" name="feedback">
+                <option value="immediate">Immediate Feedback</option>
+                <option value="delayed">Delayed Feedback</option>
+            </select>
+        </div>
+
+        <!-- Link to Course Content -->
+        <div class="form-group">
+            <label for="course-content">Link to Course Content:</label>
+            <input type="text" id="course-content" name="course-content" placeholder="Enter related course content">
+        </div>
+
+        <!-- Preview and Save/Publish Buttons -->
+        <div class="form-group">
+            <button id="preview-btn" onclick="previewAssessment()">Preview</button>
+            <button id="save-draft-btn">Save as Draft</button>
+            <button id="publish-btn">Publish</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
